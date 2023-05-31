@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Jogo da Velha</title>
+    </head>
+    <body>
+        <header>
+            <h1>Jogo da Velha</h1>
+        </header>
+        <main>
+            <div id="jogo">
+                <div id="row1" class="row">
+                    <div id="cell1" class="cell" onclick="handleClickCell(this.id)"></div>
+                    <div id="cell2" class="cell" onclick="handleClickCell(this.id)"></div>
+                    <div id="cell3" class="cell" onclick="handleClickCell(this.id)"></div>
+                </div>
+                <div id="row2" class="row">
+                    <div id="cell4" class="cell" onclick="handleClickCell(this.id)"></div>
+                    <div id="cell5" class="cell" onclick="handleClickCell(this.id)"></div>
+                    <div id="cell6" class="cell" onclick="handleClickCell(this.id)"></div>
+                </div>
+                <div id="row3" class="row">
+                    <div id="cell7" class="cell" onclick="handleClickCell(this.id)"></div>
+                    <div id="cell8" class="cell" onclick="handleClickCell(this.id)"></div>
+                    <div id="cell9" class="cell" onclick="handleClickCell(this.id)"></div>
+                </div>
+            </div>
+            <div class="label-player">
+                <label for="">Jogador:</label>
+                <label id="selected-player" for=""></label>
+            </div>
+            <div class="label-player">
+                <label for="">Vencedor:</label>
+                <label id="player-winner" for=""></label>
+            </div>
+            <div>
+                <button id="reset-button" onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>
